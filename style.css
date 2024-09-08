@@ -1,0 +1,564 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(55deg,rgb(55,52,85),rgb(180,6,215)) ;
+    overflow-x: hidden;
+
+}
+html{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background:linear-gradient(55deg,rgb(55,52,85),rgb(180,6,215)) ;
+    scroll-behavior: smooth;
+}
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+h2 {
+    margin: 0;
+}
+
+nav {
+    display: flex; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+}
+    
+nav a {
+    text-decoration: none;
+    color:rgb(219, 203, 203);
+    font-weight: bold;
+    margin-left: 20px; 
+    }
+
+nav a:hover {
+    border:2px black;
+    border-radius:5px;
+    padding:2px;
+    border: 2px solid black;
+}
+
+#Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background: linear-gradient(55deg, rgb(55,52,85), rgb(180,6,215)); 
+    color: rgb(219, 203, 203);
+}
+
+.paragraph {
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    line-height: 1.4;
+    animation: fadeInText 1s ease-in-out, scaleUp 1s ease-in-out; 
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+h2{
+    display: inline;
+}
+#imagee{
+    float: left;
+    display: inline;
+    padding: 100px 50px 100px 50px;
+    height: 70vh;
+    margin: 0 0 20px 0;
+   
+}
+.headings{
+    background:linear-gradient(55deg,rgb(55,52,85),rgb(180,6,215)) ;
+    color: whitesmoke;
+}
+h2 {
+    margin: 0;
+    display: flex;
+    align-items: center; 
+}
+
+.resume-link {
+    margin-left: 10px; 
+    color:whitesmoke;
+    text-decoration: none; 
+}
+
+.resume-link i {
+    font-size: 1.2rem; 
+    transition: color 0.3s ease; 
+}
+
+.resume-link:hover i {
+    color:black; 
+}
+#Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    color: white;
+}
+.about-me p{
+    padding:150px 150px 150px 150px;
+    color:#F0F0F0;
+    font-size: 18px;
+    font-family:"Source Sans Pro", sans-serif ;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    display: block;
+
+}
+.about-me{
+    display: block;
+    height: 100vh;
+}
+.Middle{
+    text-align: center;
+    color:whitesmoke;
+    font-size:40px;
+    padding-right: 800px;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-left:800px;
+    padding-bottom:100px;
+}
+.skills{
+    height: 100vh;
+    color: rgb(239, 234, 234);
+}
+.httml img{
+    height:50px;
+    width: 50px;
+    display: inline;
+}
+.httml{
+    
+    display: inline;
+    float: left;
+    margin: 7px;
+    border: 5px solid white;
+    padding:10px 10px 10px 10px;
+    box-shadow: 5px 5px;
+    margin-bottom: 7px;
+    margin: 15px;
+}
+.httml p{
+    padding-left:30px;
+    
+}
+.csss img{
+    height:50px;
+    width: 50px;
+}
+.csss p{
+    padding-left:30px;
+}
+.csss{
+    display: inline;
+    float: left;
+    margin: 7px;
+    border: 5px solid white;
+    padding:10px 10px 10px 10px;
+    box-shadow: 5px 5px;
+    margin-bottom: 7px;
+    margin: 15px;
+    
+}
+.jscript{
+    display: inline;
+    float: left;
+    margin: 7px;
+    border: 5px solid white;
+    padding:10px 10px 10px 10px;
+    box-shadow: 5px 5px;
+    margin-bottom: 7px;
+    margin: 15px;
+}
+.jscript img{
+    height:50px;
+    width: 50px;
+}
+.jscript p{
+    padding-left:30px;
+    
+}
+.httml:hover {
+    transform: translateY(5px);
+    background: linear-gradient(135deg, #4B0082, #210a03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
+    transition: transform 0.1s ease;
+}
+.csss:hover{
+    transform: translateY(5px);
+    background: linear-gradient(135deg, #4B0082, #210a03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
+    transition: transform 0.1s ease;
+
+}
+.jscript:hover{
+    transform: translateY(5px);
+    background: linear-gradient(135deg, #4B0082, #210a03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease;
+}
+.java{
+    display: inline;
+    float: left;
+    margin: 7px;
+    border: 5px solid white;
+    padding:10px 10px 10px 10px;
+    box-shadow: 5px 5px;
+    margin-bottom: 7px;
+    margin: 15px;
+    
+}
+.java img{
+    height:50px;
+    width: 50px;
+}
+.java p{
+    padding-left:30px;
+    
+}
+.java:hover { 
+    transform: translateY(5px);
+    background: linear-gradient(135deg, #4B0082, #210a03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease;
+}
+.python{
+    display: inline;
+    float: left;
+    margin: 7px;
+    border: 5px solid white;
+    padding:10px 10px 10px 10px;
+    box-shadow: 5px 5px;
+    margin-bottom: 7px;
+    margin: 15px;
+}
+.python img{
+    height:50px;
+    width: 50px;
+}
+.python p{
+    padding-left:30px;
+}
+.python:hover { 
+    transform: translateY(5px);
+    background: linear-gradient(135deg, #4B0082, #210a03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s ease;
+}
+.mysql{
+    display: inline;
+    float: left;
+    margin: 7px;
+    border: 5px solid white;
+    padding:10px 10px 10px 10px;
+    box-shadow: 5px 5px;
+    margin-bottom: 7px;
+    margin: 15px;
+}
+.mysql img{
+    height:50px;
+    width: 50px;
+}
+.mysql p{
+    padding-left:30px;
+}
+.mysql:hover { 
+    transform: translateY(5px);
+    background: linear-gradient(135deg, #4B0082, #210a03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
+    transition: transform 0.1s ease;
+}
+.mid-pro{
+    text-align: center;
+    color:whitesmoke;
+    font-size:40px;
+    padding-right: 800px;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-left:750px;
+}
+.projects{
+    height: 100vh;
+    color: rgb(239, 234, 234);
+}
+.project-one img{
+    height: 250px;
+    width:250px;
+    padding:10px 10px 10px 10px;
+}
+.project-one{
+    border: 5px solid whitesmoke;
+    display: inline;
+    float:left;
+    margin-left:100px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 10px;
+    box-shadow: 5px 5px;
+    
+}
+.project-two img{
+    height: 250px;
+    width:250px;
+    padding:10px 10px 10px 10px;
+}
+.project-two{
+    border: 5px solid whitesmoke;
+    display: inline;
+    float:left;
+    margin-left:100px;
+    padding: 20px 20px 20px 20px;
+    box-shadow: 5px 5px;
+
+}
+.project-one:hover{
+    transform: translateY(5px); 
+    transition: transform 0.1s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
+    background: linear-gradient(135deg, #4B0082, #210a03);
+
+}
+.project-two:hover{
+    transform: translateY(5px); 
+    transition: transform 0.1s ease;
+    background: linear-gradient(135deg, #4B0082, #210a03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
+}
+.contact-me{
+    height: 100vh;
+    color: rgb(239, 234, 234);
+}
+.contacts{
+    text-align: center;
+    color:whitesmoke;
+    font-size:40px;
+    padding-right: 800px;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-left:750px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    border: 5px solid whitesmoke;
+    margin-left:500px;
+    margin-right: 500px;
+    box-shadow: 10px;
+    box-shadow: 5px 5px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+input{
+    padding: 10px 10px 10px 10px ;
+    margin: 0px 10px 0px 10px;
+}
+label{
+    padding: 15px 15px 5px 300px ;
+    font-size: 30px;
+}
+textarea{
+    padding: 10px 10px 40px 10px ;
+    margin: 0px 10px 0px 10px;
+}
+button{
+    margin-left:150px;
+    margin-right: 150px;
+    margin-bottom: 20px;
+    padding: 15px 15px 15px 15px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+.details:hover{
+    transform: translateY(5px); 
+    transition: transform 0.1s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
+    background: linear-gradient(135deg, #4B0082, #210a03);
+}
+.portfolio-footer {
+    background: linear-gradient(45deg, rgb(55,52,85), rgb(180,6,215));
+    color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.portfolio-footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-links i {
+    margin-right: 8px; 
+}
+
+.social-links a:hover {
+    color: #ff9800;
+}
+
+.social-links a i {
+    font-size: 18px; 
+}
+/* General Styles for Mobile Devices */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .paragraph {
+        font-size: 2rem;
+        padding: 100px 20px;
+    }
+    
+    #imagee {
+        display: block;
+        margin: 0 auto;
+        padding: 20px;
+        height: auto;
+    }
+    
+    .about-me p {
+        padding: 20px;
+        font-size: 16px;
+    }
+    
+    .Middle, .mid-pro, .contacts {
+        font-size: 24px;
+        padding: 20px;
+    }
+    
+    .skills div, .projects div {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+    }
+    
+    .skills img, .projects img {
+        height: 40px;
+        width: 40px;
+    }
+    
+    .details {
+        margin: 20px;
+    }
+    
+    form input, form textarea, form button {
+        width: 100%;
+    }
+    
+    button {
+        margin: 10px 0;
+    }
+}
+
+
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    .paragraph {
+        font-size: 2.5rem;
+        padding: 150px 50px;
+    }
+    
+    #imagee {
+        height: 60vh;
+        margin: 0 20px;
+    }
+    
+    .about-me p {
+        padding: 30px;
+        font-size: 18px;
+    }
+    
+    .Middle, .mid-pro, .contacts {
+        font-size: 30px;
+        padding: 30px;
+    }
+    
+    .skills div, .projects div {
+        display: inline-block;
+        width: 45%;
+        margin: 10px 2.5%;
+    }
+    
+    .skills img, .projects img {
+        height: 50px;
+        width: 50px;
+    }
+    
+    .details {
+        margin: 30px;
+    }
+    
+    form input, form textarea, form button {
+        width: auto;
+    }
+    
+    button {
+        margin: 20px 0;
+    }
+}
+
