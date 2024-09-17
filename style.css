@@ -19,6 +19,8 @@ header {
     align-items: center; 
     padding: 20px;
     background-color: #f4f4f4;
+    width: 97vw;
+    
 }
 h2 {
     margin: 0;
@@ -27,23 +29,36 @@ h2 {
 nav {
     display: flex; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+    flex-wrap: wrap;
 }
     
 nav a {
     text-decoration: none;
     color:rgb(219, 203, 203);
     font-weight: bold;
+    font-size: 18px;
     margin-left: 20px; 
     }
 
 nav a:hover {
-    border:2px black;
     border-radius:5px;
     padding:2px;
-    border: 2px solid black;
+    color: black;
+    border:3px solid rgba(123, 84, 181, 0.269);
+    
 }
-
+@media screen and (min-width:300px) and (max-width:500px){
+    nav {
+        flex-basis: 100%;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-content: end;
+        align-items: end;
+        gap: 10px;
+    }
+    
+}
 #Home {
     display: flex;
     justify-content: center;
@@ -126,6 +141,7 @@ h2 {
     color: white;
 }
 .about-me p{
+    display: flex;
     padding:150px 150px 150px 150px;
     color:#F0F0F0;
     font-size: 18px;
@@ -133,79 +149,109 @@ h2 {
     background-color: rgba(0, 0, 0, 0.3);
     border-radius: 8px;
     display: block;
-
 }
 .about-me{
     display: block;
-    height: 100vh;
+    height:100vh;
 }
-.Middle{
-    text-align: center;
-    color:whitesmoke;
-    font-size:40px;
-    padding-right: 800px;
-    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding-left:800px;
-    padding-bottom:100px;
+@media screen and (min-width:300px) and (max-width:500px){
+    img{
+        height: 50px;
+        width: 200px;
+        display: inline;
+    }
+    .about-me p{
+        display: flex;
+        display: inline;
+        float: right;
+    }
+
 }
 .skills{
     height: 100vh;
     color: rgb(239, 234, 234);
+    display: flex;
+    display: block;
 }
+.container-one{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    width: 100%;
+    gap: 100px;
+}
+.container-two{
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    width: 100%;
+    gap: 100px;
+}
+
+
 .httml img{
     height:50px;
     width: 50px;
     display: inline;
 }
 .httml{
-    
-    display: inline;
-    float: left;
     margin: 7px;
     border: 5px solid white;
     padding:10px 10px 10px 10px;
     box-shadow: 5px 5px;
     margin-bottom: 7px;
     margin: 15px;
+    margin-left:35px ;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    display: inline;
+    justify-content: flex-start;
+    align-content: flex-start;
 }
 .httml p{
-    padding-left:30px;
-    
+    padding: 0px 10px;
+
 }
 .csss img{
     height:50px;
     width: 50px;
+    display: inline;
 }
 .csss p{
-    padding-left:30px;
+    padding: 0px 10px; 
 }
 .csss{
-    display: inline;
-    float: left;
     margin: 7px;
     border: 5px solid white;
     padding:10px 10px 10px 10px;
     box-shadow: 5px 5px;
     margin-bottom: 7px;
     margin: 15px;
+    width: 200px;
+    height: 250px; 
+    display: inline;
+    text-align: center;
     
 }
 .jscript{
-    display: inline;
-    float: left;
     margin: 7px;
     border: 5px solid white;
     padding:10px 10px 10px 10px;
     box-shadow: 5px 5px;
     margin-bottom: 7px;
     margin: 15px;
+    width: 200px;
+    height: 250px; 
+    display: inline;
+    text-align: center;
 }
 .jscript img{
     height:50px;
     width: 50px;
 }
 .jscript p{
-    padding-left:30px;
+    padding: 0px 10px; 
     
 }
 .httml:hover {
@@ -228,14 +274,17 @@ h2 {
     transition: transform 0.1s ease;
 }
 .java{
-    display: inline;
-    float: left;
     margin: 7px;
     border: 5px solid white;
     padding:10px 10px 10px 10px;
     box-shadow: 5px 5px;
     margin-bottom: 7px;
     margin: 15px;
+    margin-left: 40px;
+    width: 200px;
+    height: 250px; 
+    display: inline;
+    text-align: center;
     
 }
 .java img{
@@ -243,7 +292,7 @@ h2 {
     width: 50px;
 }
 .java p{
-    padding-left:30px;
+    padding: 0px 10px; 
     
 }
 .java:hover { 
@@ -253,21 +302,23 @@ h2 {
     transition: transform 0.1s ease;
 }
 .python{
-    display: inline;
-    float: left;
     margin: 7px;
     border: 5px solid white;
     padding:10px 10px 10px 10px;
     box-shadow: 5px 5px;
     margin-bottom: 7px;
     margin: 15px;
+    width: 200px;
+    height: 250px; 
+    display: inline;
+    text-align: center;
 }
 .python img{
     height:50px;
     width: 50px;
 }
 .python p{
-    padding-left:30px;
+    padding: 0px 10px; 
 }
 .python:hover { 
     transform: translateY(5px);
@@ -276,21 +327,23 @@ h2 {
     transition: transform 0.1s ease;
 }
 .mysql{
-    display: inline;
-    float: left;
     margin: 7px;
     border: 5px solid white;
     padding:10px 10px 10px 10px;
     box-shadow: 5px 5px;
     margin-bottom: 7px;
     margin: 15px;
+    width: 200px;
+    height: 250px; 
+    display: inline;
+    text-align: center;
 }
 .mysql img{
     height:50px;
     width: 50px;
 }
 .mysql p{
-    padding-left:30px;
+    padding: 0px 10px; 
 }
 .mysql:hover { 
     transform: translateY(5px);
@@ -298,31 +351,51 @@ h2 {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
     transition: transform 0.1s ease;
 }
-.mid-pro{
-    text-align: center;
-    color:whitesmoke;
-    font-size:40px;
-    padding-right: 800px;
-    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding-left:750px;
+@media screen and (min-width:300px) and (max-width:550px) {
+    .skills{
+        display: block;
+        width: 100%;
+        word-wrap: break-word;
+        height:100vh;
+        clear: both;
+    }
+    .container-one,.container-two{
+        display: flex;
+        gap: 0;
+    }
+    .httml,.csss,.jscript,.java,.python,.mysql{
+        width: 250px;
+        height: 350px; 
+    }  
+}
+.project-work{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    justify-content: space-around;
+    margin-bottom: 300px;
 }
 .projects{
     height: 100vh;
     color: rgb(239, 234, 234);
+    display: block;
+    margin-top: 200px;
 }
 .project-one img{
     height: 250px;
     width:250px;
     padding:10px 10px 10px 10px;
+    display: block;
 }
 .project-one{
     border: 5px solid whitesmoke;
-    display: inline;
-    float:left;
-    margin-left:100px;
+    display: inline-block;
+    margin-left:50px;
     padding: 20px 20px 20px 20px;
     box-shadow: 10px;
     box-shadow: 5px 5px;
+    height: 500px;
+    width: 500px;
     
 }
 .project-two img{
@@ -337,6 +410,8 @@ h2 {
     margin-left:100px;
     padding: 20px 20px 20px 20px;
     box-shadow: 5px 5px;
+    height: 500px;
+    width: 500px;
 
 }
 .project-one:hover{
@@ -351,6 +426,36 @@ h2 {
     transition: transform 0.1s ease;
     background: linear-gradient(135deg, #4B0082, #210a03);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
+}
+@media screen and (min-width:300px) and (max-width:550px){
+     .project-work{
+        display: flex;
+        display: block;
+        clear: both;
+        flex-direction: column;
+        column-gap: 100px;
+        justify-content: center;
+        align-content: center;
+     }
+     .project-one{
+        height: 450px;
+        width: 350px;
+        margin-right: 50px;
+     }
+     .project-two{
+        height: 450px;
+        width: 350px;
+        margin-top: 25px;
+        margin-left:50px;
+        clear: both;
+     }
+}
+/*
+.contact-me>h2{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 30px 0px 30px 0px;
 }
 .contact-me{
     height: 100vh;
@@ -406,14 +511,17 @@ button{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5) ;
     background: linear-gradient(135deg, #4B0082, #210a03);
 }
+*/
+
 .portfolio-footer {
     background: linear-gradient(45deg, rgb(55,52,85), rgb(180,6,215));
     color: whitesmoke;
     padding: 20px;
     text-align: center;
-    position: relative;
+    position: static;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
     font-family: Arial, sans-serif;
 }
 
@@ -423,7 +531,7 @@ button{
 }
 
 .social-links {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .social-links a {
